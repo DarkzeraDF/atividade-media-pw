@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p> Media <span id="med"></span></p>
+    <p> Situação <span id="sit"></span></p>
+    
+    <button><a href="index.html">Versão 2.0</a></button>
+
+    <script>
+        var nota1= parseFloat (prompt ('Digite a nota 1: '));
+        var nota2= parseFloat (prompt ('Digite a nota 2: '));
+        var media= (nota1+nota2)/2;
+
+        if (media>=6) {
+            var situacao = 'Aprovado';
+            var cor= 'blue';
+        } else {
+            var situacao= 'Reprovado';
+            var cor= 'red';
+        }
+        document.getElementById('med').innerHTML=media;
+        document.getElementById('sit').innerHTML=situacao;
+        document.getElementById('sit').style.color=cor;
+    </script>
+
+    
+</body>
+</html>
